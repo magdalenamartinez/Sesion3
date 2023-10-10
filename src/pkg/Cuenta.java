@@ -42,9 +42,9 @@ public class Cuenta {
 
 	
 	public void retirar(int i) {
-		double res = this.saldo - i;
+		double res = this.getSaldo() - i;
 		if (res >= 0) {
-			this.saldo = this.saldo - i;
+			this.setSaldo(this.getSaldo() - i);
 		}
 	}
 	
